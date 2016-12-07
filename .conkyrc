@@ -1,0 +1,70 @@
+alignment bottom_right
+border_width 1
+cpu_avg_samples 2
+default_color gray
+default_outline_color ${color #8B1A1A}
+default_shade_color white
+draw_borders yes
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+double_buffer yes
+use_xft yes
+xftfont DejaVu Sans Mono:size=12
+gap_x 4
+gap_y 3
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_type desktop
+own_window_argb_visual yes
+own_window_argb_value 210
+own_window_transparent no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+stippled_borders 0
+update_interval 1
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+ 
+
+TEXT
+
+${font :bold}${color #8B1A1A}___________Resource Information:___________$color$font
+
+${color #863136}CPU: ${color #335391}${freq_g}GHz $color${color #009494}-$cpu%$color ${color #4682b4}${goto 184}${cpugraph cpu1, 16,190, 0b1208 77b753 -t}$color
+${color #863136}MEM: ${color #335391}$mem $color${color #009494}-$memperc%$color ${color #4682b4}${goto 184}${memgraph 16,190 ob1208 77b753 4}$color
+${color #863136}HDD: ${color #335391}${fs_used} $color${color #009494}-$fs_used_perc%$color ${color #4682b4}${goto 184}${diskiograph sdb 16,190 ob1208 77b753 4}$color
+
+${color #863136}Uptime:${goto 95}${color #335391}${uptime} $font${color #009494}${goto 215}Since Last Boot$color$font
+${color #863136}Network: ${color #335391}Uploading   $color${color #009494}${upspeed enp4s0} $color
+${goto 95}${color #335391}Downloading $color${color #009494}${downspeed enp4s0}$color
+
+${color #863136}Updates:$color ${color #335391}${execi 5 checkupdates | wc -l}$color ${color #009494}${goto 125}New Package(s) Available$color
+${color #863136}Emails: $color ${color #335391}${execpi 5 python ~/.scripts/gmail.py}$color ${color #009494}${goto 125}New Email(s) Available$color
+
+${color #863136}Outside Temp:$color ${goto 127}${color #335391}${execi 600 weather-report 49534 | grep -oP '(?=Temperature).*F' | cut -f2- -d':'} $color${color #009494}(${execi 600 weather-report 49534 | grep -oP '(?<=Sky conditions: ).*' | sed 's/.*/\L&/; s/[a-z]*/\u&/g' | cut -f2- -d':'})$color
+
+${font :bold}${color #8B1A1A}_________________To Do List:_________________$color${font}
+
+${color gray}${font :size=11}${head /media/NetDrive/Dropbox/Miscellaneous/Todo.txt 23 1} $color
+
+${font :bold}${color #8B1A1A}__________Running Processes: $color${color #009494}$font${font :italc}${processes}$color${color #8B1A1A}${font :bold}__________$color$font
+
+${color #863136}Top Processes:${goto 203}PID:${goto 261}CPU%${goto 320}MEM%$color$font
+
+${color #863136}1)${goto 36}${color #335391}${top name 1}${color #009494}${goto 190}${top pid 1}${color #4682b4}${top cpu 1}${top mem 1}$color
+${color #863136}2)${goto 36}${color #335391}${top name 2}${color #009494}${goto 190}${top pid 2}${color #4682b4}${top cpu 2}${top mem 2}$color
+${color #863136}3)${goto 36}${color #335391}${top name 3}${color #009494}${goto 190}${top pid 3}${color #4682b4}${top cpu 3}${top mem 3}$color
+${color #863136}4)${goto 36}${color #335391}${top name 4}${color #009494}${goto 190}${top pid 4}${color #4682b4}${top cpu 4}${top mem 4}$color
+${color #863136}5)${goto 36}${color #335391}${top name 5}${color #009494}${goto 190}${top pid 5}${color #4682b4}${top cpu 5}${top mem 5}$color
+${color #863136}6)${goto 36}${color #335391}${top name 6}${color #009494}${goto 190}${top pid 6}${color #4682b4}${top cpu 6}${top mem 6}$color
+${color #863136}7)${goto 36}${color #335391}${top name 7}${color #009494}${goto 190}${top pid 7}${color #4682b4}${top cpu 7}${top mem 7}$color
+${color #863136}8)${goto 36}${color #335391}${top name 8}${color #009494}${goto 190}${top pid 8}${color #4682b4}${top cpu 8}${top mem 8}$color
+${color #863136}9)${goto 36}${color #335391}${top name 9}${color #009494}${goto 190}${top pid 9}${color #4682b4}${top cpu 9}${top mem 9}$color
+${color #863136}10)${goto 36}${color #335391}${top name 10}${color #009494}${goto 190}${top pid 10}${color #4682b4}${top cpu 10}${top mem 10}$color
+${color #863136}5) ${color #335391}${top name 5}${color #009494}${top pid 5}${color #4682b4}${top cpu 5}${top mem 5}$color
