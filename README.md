@@ -2,9 +2,6 @@
 
 This repo is a collection of several scripts I have written.
 
-##.conkyrc
-My conky configuration file.
-
 ##extract.sh
 
 A script that allows you to extract the contents from multiple types of archives without specifying flags or memorizing syntax. 
@@ -17,10 +14,6 @@ Supports the following formats but can easily be expanded:
 * .tar  
 * .tar.gz 
 
-
-##gmail.py
-
-Queries GMail's API to see if you have any new and unread emails.
 
 ##ip.sh
 
