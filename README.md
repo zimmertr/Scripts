@@ -1,4 +1,4 @@
-# Scripts
+# Small Shell Scripts
 
 This repo is a collection of several scripts I have written.
 
