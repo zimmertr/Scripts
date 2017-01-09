@@ -1,6 +1,6 @@
 # Small Shell Scripts
 
-This repo is a collection of several scripts I have written.
+This repo is a collection of several scripts that are too small to deserver their own repositories.
 
 ##extract.sh
 
