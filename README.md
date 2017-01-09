@@ -8,12 +8,13 @@ A script that allows you to extract the contents from multiple types of archives
 
 Supports the following formats but can easily be expanded:
 
+```
 * .zip  
 * .rar  
 * .7z  
 * .tar  
 * .tar.gz 
-
+```
 
 ##ip.sh
 
