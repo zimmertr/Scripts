@@ -2,7 +2,7 @@
 
 This repo is a collection of several scripts that are too small to deserver their own repositories.
 
-##extract.sh
+## extract.sh
 
 A script that allows you to extract the contents from multiple types of archives without specifying flags or memorizing syntax. 
 
@@ -16,15 +16,15 @@ Supports the following formats but can easily be expanded:
 * .tar.gz 
 ```
 
-##ip.sh
+## ip.sh
 
 Periodically checks your external IP Address to see if it has changed and logs the information. Useful for DDNS.
 
-##moveimage.sh
+## moveimage.sh
 
 This script was written while I was recovering thousands of photos from a Macbook that my friend accidently deleted. TestDisk returned hundreds of thousands of files and I found the results too daunting to parse through manually. Thumbnails and scaled images were included in the results so I wrote this script to sort everything into different folders depending on an images resolution and/or size for easier recovery.
 
-##sysinfo.sh
+## sysinfo.sh
 
 Queries MacOS for some system information. Example output:
 
@@ -59,6 +59,6 @@ distnoted          220   1.2  0.1
 opendirectoryd      72   1.2  0.2
 ```
 
-##weather.sh
+## weather.sh
 
 weather.sh is a script used to query a weather program, weather-report, for the forecast for the locaton of the server.
