@@ -24,6 +24,10 @@ Periodically checks your external IP Address to see if it has changed and logs t
 
 This script was written while I was recovering thousands of photos from a Macbook that my friend accidently deleted. TestDisk returned hundreds of thousands of files and I found the results too daunting to parse through manually. Thumbnails and scaled images were included in the results so I wrote this script to sort everything into different folders depending on an images resolution and/or size for easier recovery.
 
+## prepare-template.sh
+
+VMware VCSA has a concept known as templates. Which are preconfigured VMs that you can spawn future VMs from to reduce operations times. This was mostly a manual and one-off alternative to modern infrastructure as code platforms like Chef. This script will automatically prepare a virtual machine to become a Vmware template by applying some "pre-template" best practices I've established.
+
 ## sysinfo.sh
 
 Queries MacOS for some system information. Example output:
